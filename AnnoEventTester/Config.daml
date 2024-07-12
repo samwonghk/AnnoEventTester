@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="AnnoEventTester.dll"
+        defaultNamespace="AnnoEventTester"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+
+  <AddInInfo id="{73a08580-308e-421a-9763-73811b46bbd6}" version="1.0" desktopVersion="3.1.41833">
+    <Name>AnnoEventTester</Name>   
+    <Description>AnnoEventTester description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>samwo</Author>
+    <Company>Acme</Company>
+    <Date>7/12/2024 1:55:37 PM</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+
+  <modules>
+    <insertModule id="AnnoEventTester_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="AnnoEventTester_Tab1" caption="New Tab">
+          <group refID="AnnoEventTester_Group1"/>
+        </tab>-->
+      </tabs>
+              
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="AnnoEventTester_Group1" caption="Group 1" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+        </group>
+      </groups>
+      
+      <controls>
+        <!-- add your controls here -->
+      </controls> 
+      
+    </insertModule>
+	<insertModule id="AnnoEventTester_EventModule" className="Events.EventModule" autoLoad="true" caption="EventModule">
+	</insertModule>
+  </modules>
+</ArcGIS>
